@@ -11,7 +11,6 @@ public class PercolationStats {
                     trialPerc.open(StdRandom.uniformInt(1, n+1), StdRandom.uniformInt(1, n+1));
                 }
                 data[i] = ((double)(trialPerc.numberOfOpenSites())/((double)(n*n)));
-                System.out.println(trialPerc.numberOfOpenSites() + " " + (n*n));
             }
         }
 
@@ -41,6 +40,7 @@ public class PercolationStats {
 
     // test client (see below)
     public static void main(String[] args) {
+            //example use
             PercolationStats testObject = new PercolationStats(200, 1000);
             System.out.println(testObject.mean());
 
